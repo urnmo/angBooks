@@ -1,0 +1,32 @@
+<!--/* DO NOT USE THIS CODE FOR YOUR ASSIGNMENT */-->
+
+<!doctype html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="bookLendery">
+    <header>
+    <h1>Book Lendery</h1>
+    </header>
+
+    <section ng-controller="checkOut">
+        <input type='text' id="nameBox" ng-model="name" placeholder="Your Name Here">
+      <ul> 
+        <li ng-repeat="element in books">
+            <h3>{{element.book}}</h3>
+            <button ng-click="checkOutButt(book)" id="checkOutButt">CHIGGY</button>
+        </li>
+        </ul>
+    </section>
+
+    <section ng-controller="lent">
+        <input type='text' id="lookyBox" placeholder="SEARCH">
+        <button id="searchForButt">SEARCH</button>
+        <div>
+        </div>
+    </section>
+
+</body>
