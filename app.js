@@ -9,6 +9,10 @@ app.controller("checkOut", function ($scope){
 // write the function that happens on button click
 });
 
+$scope.checkOutButt = function(){
+
+},
+
 app.factory("CheckedOutBooks", function(){
     let borrowed = [];
 
