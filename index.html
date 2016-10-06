@@ -17,7 +17,7 @@
       <ul> 
         <li ng-repeat="element in books">
             <h3>{{element.book}}</h3>
-            <button ng-click="checkOutButt(book)" id="checkOutButt">CHIGGY</button>
+            <button ng-click="checkout(element.title)" id="checkOutButt">CHIGGY</button>
         </li>
         </ul>
     </section>
