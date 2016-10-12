@@ -15,9 +15,11 @@
     <section ng-controller="checkOut">
         <input type='text' id="nameBox" ng-model="name" placeholder="Your Name Here">
       <ul> 
-        <li ng-repeat="element in books">
-            <h3>{{element.book}}</h3>
-            <button ng-click="checkout(element.title)" id="checkOutButt">CHIGGY</button>
+        <li ng-repeat="book in books">
+            <h3>{{book.book}}</h3>
+            <p>{{book.author}}</p>
+            <button ng-click="checkout(book.book)" id="checkOutButt">CHIGGY</button>
+            <p>Checked out by: {{book.borrower}}</p>
         </li>
         </ul>
     </section>
